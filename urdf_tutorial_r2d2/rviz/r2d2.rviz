@@ -1,0 +1,53 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Value: true
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Enabled: true
+      Description Topic:
+        Value: /robot_description
+      Visual Enabled: true
+      Collision Enabled: false
+      Update Interval: 0
+      Alpha: 1
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Cones
+      Enabled: true
+      Topic:
+        Value: /obstacle_markers
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Name: Trail
+      Enabled: true
+      Topic:
+        Value: /robot_trail
+      Value: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: odom
+    Frame Rate: 30
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 14
+      Focal Point:
+        X: 2.5
+        Y: -3.6
+        Z: 0.3
+      Yaw: 0.785398
+      Pitch: 0.785398
+Window Geometry:
+  Height: 900
+  Width: 1200
